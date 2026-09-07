@@ -1,88 +1,77 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link rel="stylesheet" href="style.css">
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Java - Contacto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <nav class="navbar">
-    <div class="nav-logo">
-        <a href="index.html">Mi Blog</a>
-    </div>
-    <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="about.html">Sobre Nosotros</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-    </ul>
-</nav>
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-
-<div class="contacto">
-
-    <h2>Contáctanos</h2>
-
-    <p>
-        ¿Tienes dudas o quieres planear tu próximo viaje? Escríbenos y con gusto te ayudamos.
-    </p>
-
-    <div class="contacto-contenedor">
-
-        <!-- Formulario -->
-        <form class="formulario">
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu correo" required>
-            <textarea placeholder="Escribe tu mensaje" rows="5" required></textarea>
-            <button type="submit">Enviar mensaje</button>
-        </form>
-
-        <!-- Información -->
-        <div class="info-contacto">
-            <h3>Información</h3>
-            <p><strong>Teléfono:</strong> 55 1234 5678</p>
-            <p><strong>Email:</strong> contacto@horizonteviajero.com</p>
-            <p><strong>Ubicación:</strong> Ciudad de México</p>
+    <!-- Barra de Navegación Fija -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">Mi Blog</a>
         </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-    </div>
+    <!-- Contenido Principal -->
+    <main class="contacto">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes dudas o quieres planear tu próximo viaje? Escríbenos y con gusto te ayudamos.</p>
 
-</div>
+        <div class="contacto-contenedor">
+            <!-- Formulario con interactividad básica vía JavaScript opcional o submit simulado -->
+            <form class="formulario" id="contactForm">
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+                <input type="email" id="correo" placeholder="Tu correo" required>
+                <textarea id="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
 
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
-  <footer class="site-footer">
-  <div class="footer-content">
-    <div class="footer-section">
-      <h3>Sobre el proyecto</h3>
-      <p>Viajero — Descubriendo España, Alemania y Francia</p>
-    </div>
-    <div class="footer-section">
-      <h3>Autores</h3>
-      <ul class="footer-authors">
-        <li>Ariadna Vera</li>
-      <li>Elios Martinez</li>
-      <li>Essaw Cortez</li>
-      <li>Avril Ponce</li>
-      <li>Adriana Contreras</li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h3>Contacto</h3>
-      <p><a href="mailto:contacto.viajero@gmail.com">contacto.viajero@gmail.com</a></p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Viajero. AD-07: El sitio del blog - Grupo 2.</p>
-  </div>
-</footer>
+            <!-- Información -->
+            <div class="info-contacto">
+                <h3>Información</h3>
+                <p><strong>Teléfono:</strong> 55 1234 5678</p>
+                <p><strong>Email:</strong> contacto@horizonteviajero.com</p>
+                <p><strong>Ubicación:</strong> Ciudad de México</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre el proyecto</h3>
+                <p>Viajero — Descubriendo España, Alemania y Francia</p>
+            </div>
+            <div class="footer-section">
+                <h3>Autores</h3>
+                <ul class="footer-authors">
+                    <li>Ariadna Vera</li>
+                    <li>Elios Martinez</li>
+                    <li>Essaw Cortez</li>
+                    <li>Avril Ponce</li>
+                    <li>Adriana Contreras</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><a href="mailto:contacto.viajero@gmail.com">contacto.viajero@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Viajero. AD-07: El sitio del blog - Grupo 2.</p>
+        </div>
+    </footer>
+
+    <!-- Script para añadir interactividad al formulario -->
+    <script src="script.js"></script>
 </body>
-
 </html>
